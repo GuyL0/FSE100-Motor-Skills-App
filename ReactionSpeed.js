@@ -41,6 +41,7 @@ function draw() {
     text("soon! Try again?", 200, 250);
     x = 0;
     textSize(20);
+    fill(70, 80, 110);
     square(295, 545, 100);
     square(5, 545, 100);
     fill("white");
@@ -111,7 +112,7 @@ function draw() {
     }
   
     textSize(42);
-    fill("light grey");
+    fill(70, 80, 110);
     square(295, 545, 100);
     square(5, 545, 100);
     fill("white");
@@ -134,6 +135,7 @@ function mousePressed(){
   //Menus
   if((mouseX > 295 && mouseX < 400 && mouseY < 645 && mouseY > 545) && current > 101){
     current = 104;
+    return;
   }
   if((mouseX > 0 && mouseX < 105 && mouseY < 645 && mouseY > 545) && current > 101){
     current = 101;
